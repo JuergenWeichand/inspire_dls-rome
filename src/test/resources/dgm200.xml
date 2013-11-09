@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    INSPIRE Pre-defined Atom Service Feed 
+    http://www.weichand.de/inspire/dls/dgm200.xml
+-->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0">
+    <title>Digitales Geländemodell 200m Bayern - INSPIRE Atom Example</title>
+    <subtitle>Digitales Geländemodell 200m Bayern (GeoTIFF)</subtitle>
+    <link href="http://not.implemented.yet" rel="describedby" hreflang="de" type="application/vnd.ogc.csw.GetRecordByIdResponse_xml" title="Download Service Feed Metadata" />
+    <link href="http://www.weichand.de/inspire/dls/dgm200.xml" rel="self" hreflang="de" type="application/atom+xml" title="Download Service Feed" />
+    <link href="http://www.weichand.de:8080/opensearchdls/dgm200" rel="search" hreflang="de" type="application/opensearchdescription+xml" title="OpenSearch Description" />
+    <id>http://www.weichand.de/inspire/dls/dgm200.xml</id>
+    <rights>Die Datensätze stehen unter einer Creative Commons Namensnennung 3.0 Deutschland Lizenz (http://creativecommons.org/licenses/by/3.0/de/).</rights>
+    <updated>2012-12-10T00:00:00+02:00</updated>
+    <author>
+        <name>Jürgen Weichand</name>
+        <email>juergen@weichand.de</email>
+    </author>
+    <entry>
+        <title>Digitales Geländemodell 200m Bayern - INSPIRE Atom Example</title>
+        <summary>Digitales Geländemodell 200m Bayern (GeoTIFF) - Abgeleitet/Transformiert aus OpenData ASCII DGM200 - Datenquelle: Bayerische Vermessungsverwaltung – www.geodaten.bayern.de</summary>
+        <inspire_dls:spatial_dataset_identifier_code>DEBY_1d4ab890-27e7-3ebb-95ba-2d2ab8071871</inspire_dls:spatial_dataset_identifier_code>
+        <inspire_dls:spatial_dataset_identifier_namespace>http://www.geodaten.bayern.de</inspire_dls:spatial_dataset_identifier_namespace>
+        <link href="http://geoportal.bayern.de/csw/bvv?REQUEST=GetRecordById&amp;VERSION=2.0.2&amp;service=CSW&amp;outputschema=csw:IsoRecord&amp;elementsetname=full&amp;ID=c4b54cac-06ae-31ae-904f-86ef22d58ccb" rel="describedby" type="application/vnd.ogc.csw.GetRecordByIdResponse_xml" title="Dataset Metadata" />
+        <link href="http://www.weichand.de/inspire/dls/dgm200.DEBY_1d4ab890-27e7-3ebb-95ba-2d2ab8071871.xml" rel="alternate" type="application/atom+xml" title="Dataset Feed" />
+        <id>http://www.weichand.de/inspire/dls/dgm200.DEBY_1d4ab890-27e7-3ebb-95ba-2d2ab8071871</id>
+        <rights>Die Datensätze stehen unter einer Creative Commons Namensnennung 3.0 Deutschland Lizenz (http://creativecommons.org/licenses/by/3.0/de/).</rights>
+        <updated>2012-06-23T00:00:00+02:00</updated>
+        <georss:box>47.2279397510939845 8.8934968721451053 50.5798028875686470 13.9247471058637764</georss:box>
+        <category term="http://www.opengis.net/def/crs/EPSG/0/31468" label="EPSG 31468" />
+        <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="EPSG 4258" />
+    </entry>
+</feed>

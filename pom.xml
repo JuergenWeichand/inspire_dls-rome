@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.weichand.inspire</groupId>
+    <artifactId>inspire_dls-rome</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>INSPIRE_DLS ROME Module</name>
+    <url>http://www.weichand.de/</url>
+
+    <issueManagement>
+        <url>https://github.com/JuergenWeichand/inspire_dls-rome/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:JuergenWeichand/inspire_dls-rome.git</connection>
+        <developerConnection>scm:git:git@github.com:JuergenWeichand/inspire_dls-rome.git</developerConnection>
+        <url>https://github.com/JuergenWeichand/inspire_dls-rome</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <email>juergen@weichand.de</email>
+            <name>Jürgen Weichand</name>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>rome</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.0</version>
+        </dependency>      
+        <dependency>
+            <groupId>org.geonames</groupId>
+            <artifactId>georss-rome</artifactId>
+            <version>0.9.8</version>
+        </dependency>                    
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+</project>
