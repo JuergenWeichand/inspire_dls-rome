@@ -5,10 +5,10 @@ ROME Extension Module for reading/writing INSPIRE Pre-defined Atom Downloadservi
   
 inspire_dls Extension  
 
-<code>
-<inspire_dls:spatial_dataset_identifier_code>DEBY_1d4ab890-27e7-3ebb-95ba-2d2ab8071871</inspire_dls:spatial_dataset_identifier_code>
-<inspire_dls:spatial_dataset_identifier_namespace>http://www.geodaten.bayern.de</inspire_dls:spatial_dataset_identifier_namespace>
-</code>
+
+    <inspire_dls:spatial_dataset_identifier_code>DEBY_1d4ab890-27e7-3ebb-95ba-2d2ab8071871</inspire_dls:spatial_dataset_identifier_code>
+    <inspire_dls:spatial_dataset_identifier_namespace>http://www.geodaten.bayern.de</inspire_dls:spatial_dataset_identifier_namespace>
+
 
 
 Examples  
