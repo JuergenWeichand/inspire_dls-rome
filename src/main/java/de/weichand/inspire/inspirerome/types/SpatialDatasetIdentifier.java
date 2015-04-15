@@ -15,8 +15,8 @@
  */
 package de.weichand.inspire.inspirerome.types;
 
-import com.sun.syndication.feed.impl.EqualsBean;
-import com.sun.syndication.feed.impl.ToStringBean;
+import com.rometools.rome.feed.impl.EqualsBean;
+import com.rometools.rome.feed.impl.ToStringBean;
 import java.io.Serializable;
 
 /**

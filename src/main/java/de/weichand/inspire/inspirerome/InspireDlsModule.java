@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 package de.weichand.inspire.inspirerome;
-import com.sun.syndication.feed.module.Module;
+import com.rometools.rome.feed.module.Module;
 import de.weichand.inspire.inspirerome.types.SpatialDatasetIdentifier;
 
 /**

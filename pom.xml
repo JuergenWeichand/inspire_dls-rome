@@ -4,7 +4,7 @@
 
     <groupId>de.weichand.inspire</groupId>
     <artifactId>inspire_dls-rome</artifactId>
-    <version>1.0</version>
+    <version>1.5.0</version>
     <packaging>jar</packaging>
 
     <name>INSPIRE_DLS ROME Module</name>
@@ -25,6 +25,10 @@
             <email>juergen@weichand.de</email>
             <name>Jürgen Weichand</name>
         </developer>
+        <developer>
+            <email>tobias.clement@it.nrw.de</email>
+            <name>Tobias Clement</name>
+        </developer>
     </developers>
 
     <licenses>
@@ -41,15 +45,16 @@
 
     <dependencies>
         <dependency>
-            <groupId>rome</groupId>
+            <groupId>com.rometools</groupId>
             <artifactId>rome</artifactId>
-            <version>1.0</version>
-        </dependency>      
+            <version>1.5.0</version>
+        </dependency> 
         <dependency>
-            <groupId>org.geonames</groupId>
-            <artifactId>georss-rome</artifactId>
-            <version>0.9.8</version>
-        </dependency>                    
+            <groupId>com.rometools</groupId>
+            <artifactId>rome-modules</artifactId>
+            <version>1.5.0</version>
+            <scope>test</scope>
+        </dependency>                 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
