@@ -1,7 +1,7 @@
 inspire_dls-rome
 ================
 
-ROME Extension Module for reading/writing INSPIRE Pre-defined Atom Downloadservices  
+ROME (1.5.0) Extension Module for reading/writing INSPIRE Pre-defined Atom Downloadservices  
   
 inspire_dls Extension  
 

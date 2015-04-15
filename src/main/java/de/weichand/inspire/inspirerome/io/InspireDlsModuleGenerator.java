@@ -15,13 +15,13 @@
  */
 package de.weichand.inspire.inspirerome.io;
 
-import com.sun.syndication.feed.module.Module;
-import com.sun.syndication.io.ModuleGenerator;
+import com.rometools.rome.feed.module.Module;
+import com.rometools.rome.io.ModuleGenerator;
 import de.weichand.inspire.inspirerome.InspireDlsModule;
 import java.util.HashSet;
 import java.util.Set;
-import org.jdom.Element;
-import org.jdom.Namespace;
+import org.jdom2.Element;
+import org.jdom2.Namespace;
 
 /**
  * Generator for inspire_dls Elements

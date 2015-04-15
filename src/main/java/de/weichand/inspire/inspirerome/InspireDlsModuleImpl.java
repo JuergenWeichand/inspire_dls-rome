@@ -15,8 +15,9 @@
  */
 package de.weichand.inspire.inspirerome;
 
-import com.sun.syndication.feed.impl.EqualsBean;
-import com.sun.syndication.feed.impl.ToStringBean;
+import com.rometools.rome.feed.CopyFrom;
+import com.rometools.rome.feed.impl.EqualsBean;
+import com.rometools.rome.feed.impl.ToStringBean;
 import de.weichand.inspire.inspirerome.types.SpatialDatasetIdentifier;
 
 /**
@@ -75,8 +76,8 @@ public class InspireDlsModuleImpl implements InspireDlsModule {
         return equalsBean.beanHashCode();
     }        
 
-    public void copyFrom(Object object) {
-        final InspireDlsModule source = (InspireDlsModule) object;
+    public void copyFrom(CopyFrom cf) {
+        final InspireDlsModule source = (InspireDlsModule) cf;
         setSpatialDatasetIdentifier(source.getSpatialDatasetIdentifier());
     }
 }

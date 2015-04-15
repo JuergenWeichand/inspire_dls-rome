@@ -15,13 +15,14 @@
  */
 package de.weichand.inspire.inspirerome.io;
 
-import com.sun.syndication.feed.module.Module;
-import com.sun.syndication.io.ModuleParser;
+import com.rometools.rome.feed.module.Module;
+import com.rometools.rome.io.ModuleParser;
 import de.weichand.inspire.inspirerome.InspireDlsModule;
 import de.weichand.inspire.inspirerome.InspireDlsModuleImpl;
 import de.weichand.inspire.inspirerome.types.SpatialDatasetIdentifier;
-import org.jdom.Element;
-import org.jdom.Namespace;
+import java.util.Locale;
+import org.jdom2.Element;
+import org.jdom2.Namespace;
 
 /**
  * Parser for inspire_dls Elements
@@ -38,7 +39,7 @@ public class InspireDlsModuleParser implements ModuleParser {
         return InspireDlsModule.URI;
     }
 
-    public Module parse(Element element) {
+    public Module parse(Element element, Locale locale) {
 
         final InspireDlsModuleImpl inspireDlsModuleImpl = new InspireDlsModuleImpl();
         final SpatialDatasetIdentifier spatialDatasetIdentifier = new SpatialDatasetIdentifier();

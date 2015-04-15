@@ -1,13 +1,13 @@
 package de.weichand.inspire.inspirerome;
 
-import com.sun.syndication.feed.atom.Entry;
-import com.sun.syndication.feed.atom.Feed;
-import com.sun.syndication.feed.module.Module;
-import com.sun.syndication.feed.module.georss.GeoRSSModule;
-import com.sun.syndication.feed.module.georss.SimpleModuleImpl;
-import com.sun.syndication.feed.module.georss.geometries.Envelope;
-import com.sun.syndication.io.FeedException;
-import com.sun.syndication.io.impl.Atom10Generator;
+import com.rometools.rome.feed.atom.Entry;
+import com.rometools.rome.feed.atom.Feed;
+import com.rometools.rome.feed.module.Module;
+import com.rometools.modules.georss.GeoRSSModule;
+import com.rometools.modules.georss.SimpleModuleImpl;
+import com.rometools.modules.georss.geometries.Envelope;
+import com.rometools.rome.io.FeedException;
+import com.rometools.rome.io.impl.Atom10Generator;
 import de.weichand.inspire.inspirerome.types.SpatialDatasetIdentifier;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,9 +17,9 @@ import java.util.List;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.jdom.Document;
-import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom2.Document;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 /**
  * Unit test for ROME-Generator
@@ -46,11 +46,15 @@ public class GeneratorTest extends TestCase {
 
     /**
      * Generator-Test (Simplified INSPIRE Service Feed)
+     * @throws com.rometools.rome.io.FeedException
+     * @throws java.io.IOException
      */
     public void testGenerator() throws FeedException, IOException {
 
         // Atom Container-Element
-        Feed atomFeed = new Feed("ATOM1.0");        
+        Feed atomFeed = new Feed(); 
+        atomFeed.setEncoding("utf-8");
+        
         atomFeed.setTitle("Digitales Geländemodell 200m Bayern - INSPIRE Atom Example");                       
         atomFeed.setUpdated(new Date());
         
